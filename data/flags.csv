@@ -1,0 +1,4 @@
+as_of_week,group,flag,detail
+4,channel_managers,STALL,"active 88% but work migrated 14% vs target 25%; people are in the tool, not doing the real work there. Desire barrier: check legacy path and override rate"
+4,channel_managers,OVERRIDE,override rate 46% above guardrail 25%; manager conversation on override discipline
+4,channel_managers,COACHING,only 14% of managers coached this week; sponsor's ask goes to the managers' leader
