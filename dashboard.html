@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Adoption Readout</title>
+<style>
+:root{color-scheme:light;--bg:#fcfcfb;--panel:#ffffff;--ink:#0b0b0b;--ink2:#52514e;--muted:#8a8984;--grid:#e6e5e1;--line:#d6d5d0;--warn:#b45309;--s1:#2a78d6;--s2:#eb6834;--s3:#1baf7a;--s4:#eda100;--s5:#e87ba4;}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#1a1a19;--panel:#222221;--ink:#f0efec;--ink2:#c3c2b7;--muted:#8d8c86;--grid:#33332f;--line:#3d3d38;--warn:#f0a35a;--s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--s5:#d55181;}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#1a1a19;--panel:#222221;--ink:#f0efec;--ink2:#c3c2b7;--muted:#8d8c86;--grid:#33332f;--line:#3d3d38;--warn:#f0a35a;--s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--s5:#d55181;}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;padding:24px 16px}
+main{max-width:960px;margin:0 auto}h1{font-size:22px;margin:0 0 4px}.sub{color:var(--ink2);margin:0 0 16px}
+.headline{border-left:4px solid var(--warn);padding:10px 14px;background:var(--panel);border-radius:6px;margin:0 0 20px;font-weight:600}
+.legend{list-style:none;display:flex;flex-wrap:wrap;gap:6px 16px;padding:0;margin:0 0 12px;color:var(--ink2);font-size:13px}.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
+.chart{margin:0;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:10px}.chart figcaption{display:flex;justify-content:space-between;gap:8px;font-size:13px;margin-bottom:4px}.chart figcaption span{color:var(--muted)}
+svg{width:100%;height:auto;display:block}.grid{stroke:var(--grid);stroke-width:1}.tick{fill:var(--muted);font-size:10px}.target{fill:none;stroke:var(--ink2);stroke-width:1.5;stroke-dasharray:4 4}
+.series{fill:none;stroke-width:2;stroke-linejoin:round;stroke-linecap:round}.series.flagged{stroke-width:3}.label{fill:var(--ink);font-size:11px;font-weight:600}
+.pt:hover{fill:var(--ink);fill-opacity:.15}#tip{position:fixed;pointer-events:none;background:var(--ink);color:var(--bg);padding:4px 8px;border-radius:4px;font-size:12px;display:none;z-index:9}
+section{margin-top:24px}h2{font-size:16px;margin:0 0 8px}table{width:100%;border-collapse:collapse;background:var(--panel);border:1px solid var(--line);border-radius:8px;font-size:13px}th,td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--line);vertical-align:top}th{color:var(--ink2);font-weight:600}code{font-size:12px}
+details summary{cursor:pointer;color:var(--ink2)}
+</style></head><body><main>
+<h1>Adoption readout</h1><p class="sub">Week 4 of a 90-day platform rollout · five impacted groups · synthetic data</p>
+<p class="headline">Intervene on channel managers this week. Look at that group&#x27;s sponsor before looking at that group.</p>
+<ul class="legend"><li><i style="background:var(--s1)"></i>analysts</li><li><i style="background:var(--s2)"></i>campaign ops</li><li><i style="background:var(--s3)"></i>channel managers</li><li><i style="background:var(--s4)"></i>compliance approvers</li><li><i style="background:var(--s5)"></i>lob marketing leads</li></ul>
+<div class="grid4"><figure class="chart"><figcaption><strong>Weekly active users</strong><span>share of group</span></figcaption>
+<svg viewBox="0 0 420 220" role="img" aria-label="Weekly active users by group by week">
+<line class="grid" x1="44" y1="190.0" x2="404" y2="190.0"/>
+<text class="tick" x="38" y="194.0" text-anchor="end">0%</text>
+<line class="grid" x1="44" y1="148.0" x2="404" y2="148.0"/>
+<text class="tick" x="38" y="152.0" text-anchor="end">25%</text>
+<line class="grid" x1="44" y1="106.0" x2="404" y2="106.0"/>
+<text class="tick" x="38" y="110.0" text-anchor="end">50%</text>
+<line class="grid" x1="44" y1="64.0" x2="404" y2="64.0"/>
+<text class="tick" x="38" y="68.0" text-anchor="end">75%</text>
+<line class="grid" x1="44" y1="22.0" x2="404" y2="22.0"/>
+<text class="tick" x="38" y="26.0" text-anchor="end">100%</text>
+<text class="tick" x="44.0" y="210" text-anchor="middle">w1</text>
+<text class="tick" x="104.0" y="210" text-anchor="middle">w3</text>
+<text class="tick" x="164.0" y="210" text-anchor="middle">w5</text>
+<text class="tick" x="224.0" y="210" text-anchor="middle">w7</text>
+<text class="tick" x="284.0" y="210" text-anchor="middle">w9</text>
+<text class="tick" x="344.0" y="210" text-anchor="middle">w11</text>
+<text class="tick" x="404.0" y="210" text-anchor="middle">w13</text>
+<polyline class="target" points="44.0,190.0 74.0,139.6 104.0,139.6 134.0,139.6 164.0,139.6 194.0,89.2 224.0,89.2 254.0,89.2 284.0,89.2 314.0,55.6 344.0,55.6 374.0,55.6 404.0,55.6"/>
+<text class="tick" x="404" y="50.6" text-anchor="end">target</text>
+<polyline class="series" style="stroke:var(--s1)" points="74.0,162.0 104.0,139.6 134.0,72.4 164.0,50.0 194.0,22.0 224.0,22.0 254.0,22.0 284.0,22.0 314.0,22.0 344.0,27.6 374.0,22.0 404.0,22.0" data-group="analysts"/>
+<circle class="pt" cx="74.0" cy="162.0" r="7" fill="transparent" data-tip="analysts · week 2: 17%"/>
+<circle class="pt" cx="104.0" cy="139.6" r="7" fill="transparent" data-tip="analysts · week 3: 30%"/>
+<circle class="pt" cx="134.0" cy="72.4" r="7" fill="transparent" data-tip="analysts · week 4: 70%"/>
+<circle class="pt" cx="164.0" cy="50.0" r="7" fill="transparent" data-tip="analysts · week 5: 83%"/>
+<circle class="pt" cx="194.0" cy="22.0" r="7" fill="transparent" data-tip="analysts · week 6: 100%"/>
+<circle class="pt" cx="224.0" cy="22.0" r="7" fill="transparent" data-tip="analysts · week 7: 100%"/>
+<circle class="pt" cx="254.0" cy="22.0" r="7" fill="transparent" data-tip="analysts · week 8: 100%"/>
+<circle class="pt" cx="284.0" cy="22.0" r="7" fill="transparent" data-tip="analysts · week 9: 100%"/>
+<circle class="pt" cx="314.0" cy="22.0" r="7" fill="transparent" data-tip="analysts · week 10: 100%"/>
+<circle class="pt" cx="344.0" cy="27.6" r="7" fill="transparent" data-tip="analysts · week 11: 97%"/>
+<circle class="pt" cx="374.0" cy="22.0" r="7" fill="transparent" data-tip="analysts · week 12: 100%"/>
+<circle class="pt" cx="404.0" cy="22.0" r="7" fill="transparent" data-tip="analysts · week 13: 100%"/>
+<polyline class="series" style="stroke:var(--s2)" points="44.0,169.0 74.0,101.8 104.0,47.2 134.0,22.0 164.0,22.0 194.0,22.0 224.0,22.0 254.0,22.0 284.0,22.0 314.0,22.0 344.0,22.0 374.0,22.0 404.0,22.0" data-group="campaign_ops"/>
+<circle class="pt" cx="44.0" cy="169.0" r="7" fill="transparent" data-tip="campaign ops · week 1: 12%"/>
+<circle class="pt" cx="74.0" cy="101.8" r="7" fill="transparent" data-tip="campaign ops · week 2: 52%"/>
+<circle class="pt" cx="104.0" cy="47.2" r="7" fill="transparent" data-tip="campaign ops · week 3: 85%"/>
+<circle class="pt" cx="134.0" cy="22.0" r="7" fill="transparent" data-tip="campaign ops · week 4: 100%"/>
+<circle class="pt" cx="164.0" cy="22.0" r="7" fill="transparent" data-tip="campaign ops · week 5: 100%"/>
+<circle class="pt" cx="194.0" cy="22.0" r="7" fill="transparent" data-tip="campaign ops · week 6: 100%"/>
+<circle class="pt" cx="224.0" cy="22.0" r="7" fill="transparent" data-tip="campaign ops · week 7: 100%"/>
+<circle class="pt" cx="254.0" cy="22.0" r="7" fill="transparent" data-tip="campaign ops · week 8: 100%"/>
+<circle class="pt" cx="284.0" cy="22.0" r="7" fill="transparent" data-tip="campaign ops · week 9: 100%"/>
+<circle class="pt" cx="314.0" cy="22.0" r="7" fill="transparent" data-tip="campaign ops · week 10: 100%"/>
+<circle class="pt" cx="344.0" cy="22.0" r="7" fill="transparent" data-tip="campaign ops · week 11: 100%"/>
+<circle class="pt" cx="374.0" cy="22.0" r="7" fill="transparent" data-tip="campaign ops · week 12: 100%"/>
+<circle class="pt" cx="404.0" cy="22.0" r="7" fill="transparent" data-tip="campaign ops · week 13: 100%"/>
+<polyline class="series flagged" style="stroke:var(--s3)" points="44.0,178.8 74.0,134.0 104.0,97.6 134.0,41.6 164.0,22.0 194.0,24.8 224.0,24.8 254.0,22.0 284.0,22.0 314.0,24.8 344.0,22.0 374.0,27.6 404.0,24.8" data-group="channel_managers"/>
+<circle class="pt" cx="44.0" cy="178.8" r="7" fill="transparent" data-tip="channel managers · week 1: 7%"/>
+<circle class="pt" cx="74.0" cy="134.0" r="7" fill="transparent" data-tip="channel managers · week 2: 33%"/>
+<circle class="pt" cx="104.0" cy="97.6" r="7" fill="transparent" data-tip="channel managers · week 3: 55%"/>
+<circle class="pt" cx="134.0" cy="41.6" r="7" fill="transparent" data-tip="channel managers · week 4: 88%"/>
+<circle class="pt" cx="164.0" cy="22.0" r="7" fill="transparent" data-tip="channel managers · week 5: 100%"/>
+<circle class="pt" cx="194.0" cy="24.8" r="7" fill="transparent" data-tip="channel managers · week 6: 98%"/>
+<circle class="pt" cx="224.0" cy="24.8" r="7" fill="transparent" data-tip="channel managers · week 7: 98%"/>
+<circle class="pt" cx="254.0" cy="22.0" r="7" fill="transparent" data-tip="channel managers · week 8: 100%"/>
+<circle class="pt" cx="284.0" cy="22.0" r="7" fill="transparent" data-tip="channel managers · week 9: 100%"/>
+<circle class="pt" cx="314.0" cy="24.8" r="7" fill="transparent" data-tip="channel managers · week 10: 98%"/>
+<circle class="pt" cx="344.0" cy="22.0" r="7" fill="transparent" data-tip="channel managers · week 11: 100%"/>
+<circle class="pt" cx="374.0" cy="27.6" r="7" fill="transparent" data-tip="channel managers · week 12: 97%"/>
+<circle class="pt" cx="404.0" cy="24.8" r="7" fill="transparent" data-tip="channel managers · week 13: 98%"/>
+<text class="label" x="400.0" y="17.8" text-anchor="end">channel managers</text>
+<polyline class="series" style="stroke:var(--s4)" points="44.0,183.3 74.0,129.5 104.0,35.4 134.0,35.4 164.0,22.0 194.0,28.7 224.0,22.0 254.0,22.0 284.0,22.0 314.0,22.0 344.0,22.0 374.0,22.0 404.0,22.0" data-group="compliance_approvers"/>
+<circle class="pt" cx="44.0" cy="183.3" r="7" fill="transparent" data-tip="compliance approvers · week 1: 4%"/>
+<circle class="pt" cx="74.0" cy="129.5" r="7" fill="transparent" data-tip="compliance approvers · week 2: 36%"/>
+<circle class="pt" cx="104.0" cy="35.4" r="7" fill="transparent" data-tip="compliance approvers · week 3: 92%"/>
+<circle class="pt" cx="134.0" cy="35.4" r="7" fill="transparent" data-tip="compliance approvers · week 4: 92%"/>
+<circle class="pt" cx="164.0" cy="22.0" r="7" fill="transparent" data-tip="compliance approvers · week 5: 100%"/>
+<circle class="pt" cx="194.0" cy="28.7" r="7" fill="transparent" data-tip="compliance approvers · week 6: 96%"/>
+<circle class="pt" cx="224.0" cy="22.0" r="7" fill="transparent" data-tip="compliance approvers · week 7: 100%"/>
+<circle class="pt" cx="254.0" cy="22.0" r="7" fill="transparent" data-tip="compliance approvers · week 8: 100%"/>
+<circle class="pt" cx="284.0" cy="22.0" r="7" fill="transparent" data-tip="compliance approvers · week 9: 100%"/>
+<circle class="pt" cx="314.0" cy="22.0" r="7" fill="transparent" data-tip="compliance approvers · week 10: 100%"/>
+<circle class="pt" cx="344.0" cy="22.0" r="7" fill="transparent" data-tip="compliance approvers · week 11: 100%"/>
+<circle class="pt" cx="374.0" cy="22.0" r="7" fill="transparent" data-tip="compliance approvers · week 12: 100%"/>
+<circle class="pt" cx="404.0" cy="22.0" r="7" fill="transparent" data-tip="compliance approvers · week 13: 100%"/>
+<polyline class="series" style="stroke:var(--s5)" points="44.0,181.6 74.0,131.2 104.0,80.8 134.0,38.8 164.0,47.2 194.0,22.0 224.0,22.0 254.0,22.0 284.0,22.0 314.0,22.0 344.0,22.0 374.0,22.0 404.0,22.0" data-group="lob_marketing_leads"/>
+<circle class="pt" cx="44.0" cy="181.6" r="7" fill="transparent" data-tip="lob marketing leads · week 1: 5%"/>
+<circle class="pt" cx="74.0" cy="131.2" r="7" fill="transparent" data-tip="lob marketing leads · week 2: 35%"/>
+<circle class="pt" cx="104.0" cy="80.8" r="7" fill="transparent" data-tip="lob marketing leads · week 3: 65%"/>
+<circle class="pt" cx="134.0" cy="38.8" r="7" fill="transparent" data-tip="lob marketing leads · week 4: 90%"/>
+<circle class="pt" cx="164.0" cy="47.2" r="7" fill="transparent" data-tip="lob marketing leads · week 5: 85%"/>
+<circle class="pt" cx="194.0" cy="22.0" r="7" fill="transparent" data-tip="lob marketing leads · week 6: 100%"/>
+<circle class="pt" cx="224.0" cy="22.0" r="7" fill="transparent" data-tip="lob marketing leads · week 7: 100%"/>
+<circle class="pt" cx="254.0" cy="22.0" r="7" fill="transparent" data-tip="lob marketing leads · week 8: 100%"/>
+<circle class="pt" cx="284.0" cy="22.0" r="7" fill="transparent" data-tip="lob marketing leads · week 9: 100%"/>
+<circle class="pt" cx="314.0" cy="22.0" r="7" fill="transparent" data-tip="lob marketing leads · week 10: 100%"/>
+<circle class="pt" cx="344.0" cy="22.0" r="7" fill="transparent" data-tip="lob marketing leads · week 11: 100%"/>
+<circle class="pt" cx="374.0" cy="22.0" r="7" fill="transparent" data-tip="lob marketing leads · week 12: 100%"/>
+<circle class="pt" cx="404.0" cy="22.0" r="7" fill="transparent" data-tip="lob marketing leads · week 13: 100%"/>
+</svg></figure>
+<figure class="chart"><figcaption><strong>Work migrated to new path</strong><span>share of work items</span></figcaption>
+<svg viewBox="0 0 420 220" role="img" aria-label="Work migrated to new path by group by week">
+<line class="grid" x1="44" y1="190.0" x2="404" y2="190.0"/>
+<text class="tick" x="38" y="194.0" text-anchor="end">0%</text>
+<line class="grid" x1="44" y1="148.0" x2="404" y2="148.0"/>
+<text class="tick" x="38" y="152.0" text-anchor="end">25%</text>
+<line class="grid" x1="44" y1="106.0" x2="404" y2="106.0"/>
+<text class="tick" x="38" y="110.0" text-anchor="end">50%</text>
+<line class="grid" x1="44" y1="64.0" x2="404" y2="64.0"/>
+<text class="tick" x="38" y="68.0" text-anchor="end">75%</text>
+<line class="grid" x1="44" y1="22.0" x2="404" y2="22.0"/>
+<text class="tick" x="38" y="26.0" text-anchor="end">100%</text>
+<text class="tick" x="44.0" y="210" text-anchor="middle">w1</text>
+<text class="tick" x="104.0" y="210" text-anchor="middle">w3</text>
+<text class="tick" x="164.0" y="210" text-anchor="middle">w5</text>
+<text class="tick" x="224.0" y="210" text-anchor="middle">w7</text>
+<text class="tick" x="284.0" y="210" text-anchor="middle">w9</text>
+<text class="tick" x="344.0" y="210" text-anchor="middle">w11</text>
+<text class="tick" x="404.0" y="210" text-anchor="middle">w13</text>
+<polyline class="target" points="44.0,190.0 74.0,190.0 104.0,190.0 134.0,148.0 164.0,148.0 194.0,148.0 224.0,148.0 254.0,106.0 284.0,106.0 314.0,106.0 344.0,106.0 374.0,72.4 404.0,72.4"/>
+<text class="tick" x="404" y="67.4" text-anchor="end">target</text>
+<polyline class="series" style="stroke:var(--s1)" points="74.0,190.0 104.0,190.0 134.0,157.3 164.0,163.4 194.0,158.3 224.0,111.3 254.0,98.6 284.0,85.1 314.0,81.7 344.0,75.6 374.0,71.1 404.0,76.0" data-group="analysts"/>
+<circle class="pt" cx="74.0" cy="190.0" r="7" fill="transparent" data-tip="analysts · week 2: 0%"/>
+<circle class="pt" cx="104.0" cy="190.0" r="7" fill="transparent" data-tip="analysts · week 3: 0%"/>
+<circle class="pt" cx="134.0" cy="157.3" r="7" fill="transparent" data-tip="analysts · week 4: 19%"/>
+<circle class="pt" cx="164.0" cy="163.4" r="7" fill="transparent" data-tip="analysts · week 5: 16%"/>
+<circle class="pt" cx="194.0" cy="158.3" r="7" fill="transparent" data-tip="analysts · week 6: 19%"/>
+<circle class="pt" cx="224.0" cy="111.3" r="7" fill="transparent" data-tip="analysts · week 7: 47%"/>
+<circle class="pt" cx="254.0" cy="98.6" r="7" fill="transparent" data-tip="analysts · week 8: 54%"/>
+<circle class="pt" cx="284.0" cy="85.1" r="7" fill="transparent" data-tip="analysts · week 9: 62%"/>
+<circle class="pt" cx="314.0" cy="81.7" r="7" fill="transparent" data-tip="analysts · week 10: 64%"/>
+<circle class="pt" cx="344.0" cy="75.6" r="7" fill="transparent" data-tip="analysts · week 11: 68%"/>
+<circle class="pt" cx="374.0" cy="71.1" r="7" fill="transparent" data-tip="analysts · week 12: 71%"/>
+<circle class="pt" cx="404.0" cy="76.0" r="7" fill="transparent" data-tip="analysts · week 13: 68%"/>
+<polyline class="series" style="stroke:var(--s2)" points="74.0,176.7 104.0,134.0 134.0,111.6 164.0,71.0 194.0,43.8 224.0,37.3 254.0,42.5 284.0,38.9 314.0,31.1 344.0,35.5 374.0,34.1 404.0,37.5" data-group="campaign_ops"/>
+<circle class="pt" cx="74.0" cy="176.7" r="7" fill="transparent" data-tip="campaign ops · week 2: 8%"/>
+<circle class="pt" cx="104.0" cy="134.0" r="7" fill="transparent" data-tip="campaign ops · week 3: 33%"/>
+<circle class="pt" cx="134.0" cy="111.6" r="7" fill="transparent" data-tip="campaign ops · week 4: 47%"/>
+<circle class="pt" cx="164.0" cy="71.0" r="7" fill="transparent" data-tip="campaign ops · week 5: 71%"/>
+<circle class="pt" cx="194.0" cy="43.8" r="7" fill="transparent" data-tip="campaign ops · week 6: 87%"/>
+<circle class="pt" cx="224.0" cy="37.3" r="7" fill="transparent" data-tip="campaign ops · week 7: 91%"/>
+<circle class="pt" cx="254.0" cy="42.5" r="7" fill="transparent" data-tip="campaign ops · week 8: 88%"/>
+<circle class="pt" cx="284.0" cy="38.9" r="7" fill="transparent" data-tip="campaign ops · week 9: 90%"/>
+<circle class="pt" cx="314.0" cy="31.1" r="7" fill="transparent" data-tip="campaign ops · week 10: 95%"/>
+<circle class="pt" cx="344.0" cy="35.5" r="7" fill="transparent" data-tip="campaign ops · week 11: 92%"/>
+<circle class="pt" cx="374.0" cy="34.1" r="7" fill="transparent" data-tip="campaign ops · week 12: 93%"/>
+<circle class="pt" cx="404.0" cy="37.5" r="7" fill="transparent" data-tip="campaign ops · week 13: 91%"/>
+<polyline class="series flagged" style="stroke:var(--s3)" points="74.0,186.0 104.0,181.9 134.0,166.1 164.0,150.5 194.0,140.5 224.0,139.1 254.0,135.8 284.0,135.4 314.0,125.6 344.0,130.6 374.0,134.2 404.0,130.6" data-group="channel_managers"/>
+<circle class="pt" cx="74.0" cy="186.0" r="7" fill="transparent" data-tip="channel managers · week 2: 2%"/>
+<circle class="pt" cx="104.0" cy="181.9" r="7" fill="transparent" data-tip="channel managers · week 3: 5%"/>
+<circle class="pt" cx="134.0" cy="166.1" r="7" fill="transparent" data-tip="channel managers · week 4: 14%"/>
+<circle class="pt" cx="164.0" cy="150.5" r="7" fill="transparent" data-tip="channel managers · week 5: 24%"/>
+<circle class="pt" cx="194.0" cy="140.5" r="7" fill="transparent" data-tip="channel managers · week 6: 29%"/>
+<circle class="pt" cx="224.0" cy="139.1" r="7" fill="transparent" data-tip="channel managers · week 7: 30%"/>
+<circle class="pt" cx="254.0" cy="135.8" r="7" fill="transparent" data-tip="channel managers · week 8: 32%"/>
+<circle class="pt" cx="284.0" cy="135.4" r="7" fill="transparent" data-tip="channel managers · week 9: 33%"/>
+<circle class="pt" cx="314.0" cy="125.6" r="7" fill="transparent" data-tip="channel managers · week 10: 38%"/>
+<circle class="pt" cx="344.0" cy="130.6" r="7" fill="transparent" data-tip="channel managers · week 11: 35%"/>
+<circle class="pt" cx="374.0" cy="134.2" r="7" fill="transparent" data-tip="channel managers · week 12: 33%"/>
+<circle class="pt" cx="404.0" cy="130.6" r="7" fill="transparent" data-tip="channel managers · week 13: 35%"/>
+<text class="label" x="400.0" y="123.6" text-anchor="end">channel managers</text>
+<polyline class="series" style="stroke:var(--s4)" points="74.0,176.6 104.0,167.6 134.0,137.4 164.0,106.6 194.0,73.8 224.0,56.6 254.0,53.4 284.0,38.8 314.0,46.0 344.0,41.8 374.0,42.2 404.0,41.4" data-group="compliance_approvers"/>
+<circle class="pt" cx="74.0" cy="176.6" r="7" fill="transparent" data-tip="compliance approvers · week 2: 8%"/>
+<circle class="pt" cx="104.0" cy="167.6" r="7" fill="transparent" data-tip="compliance approvers · week 3: 13%"/>
+<circle class="pt" cx="134.0" cy="137.4" r="7" fill="transparent" data-tip="compliance approvers · week 4: 31%"/>
+<circle class="pt" cx="164.0" cy="106.6" r="7" fill="transparent" data-tip="compliance approvers · week 5: 50%"/>
+<circle class="pt" cx="194.0" cy="73.8" r="7" fill="transparent" data-tip="compliance approvers · week 6: 69%"/>
+<circle class="pt" cx="224.0" cy="56.6" r="7" fill="transparent" data-tip="compliance approvers · week 7: 79%"/>
+<circle class="pt" cx="254.0" cy="53.4" r="7" fill="transparent" data-tip="compliance approvers · week 8: 81%"/>
+<circle class="pt" cx="284.0" cy="38.8" r="7" fill="transparent" data-tip="compliance approvers · week 9: 90%"/>
+<circle class="pt" cx="314.0" cy="46.0" r="7" fill="transparent" data-tip="compliance approvers · week 10: 86%"/>
+<circle class="pt" cx="344.0" cy="41.8" r="7" fill="transparent" data-tip="compliance approvers · week 11: 88%"/>
+<circle class="pt" cx="374.0" cy="42.2" r="7" fill="transparent" data-tip="compliance approvers · week 12: 88%"/>
+<circle class="pt" cx="404.0" cy="41.4" r="7" fill="transparent" data-tip="compliance approvers · week 13: 88%"/>
+<polyline class="series" style="stroke:var(--s5)" points="74.0,190.0 104.0,158.9 134.0,142.0 164.0,101.0 194.0,87.3 224.0,68.8 254.0,52.2 284.0,59.0 314.0,64.0 344.0,55.6 374.0,54.1 404.0,66.1" data-group="lob_marketing_leads"/>
+<circle class="pt" cx="74.0" cy="190.0" r="7" fill="transparent" data-tip="lob marketing leads · week 2: 0%"/>
+<circle class="pt" cx="104.0" cy="158.9" r="7" fill="transparent" data-tip="lob marketing leads · week 3: 19%"/>
+<circle class="pt" cx="134.0" cy="142.0" r="7" fill="transparent" data-tip="lob marketing leads · week 4: 29%"/>
+<circle class="pt" cx="164.0" cy="101.0" r="7" fill="transparent" data-tip="lob marketing leads · week 5: 53%"/>
+<circle class="pt" cx="194.0" cy="87.3" r="7" fill="transparent" data-tip="lob marketing leads · week 6: 61%"/>
+<circle class="pt" cx="224.0" cy="68.8" r="7" fill="transparent" data-tip="lob marketing leads · week 7: 72%"/>
+<circle class="pt" cx="254.0" cy="52.2" r="7" fill="transparent" data-tip="lob marketing leads · week 8: 82%"/>
+<circle class="pt" cx="284.0" cy="59.0" r="7" fill="transparent" data-tip="lob marketing leads · week 9: 78%"/>
+<circle class="pt" cx="314.0" cy="64.0" r="7" fill="transparent" data-tip="lob marketing leads · week 10: 75%"/>
+<circle class="pt" cx="344.0" cy="55.6" r="7" fill="transparent" data-tip="lob marketing leads · week 11: 80%"/>
+<circle class="pt" cx="374.0" cy="54.1" r="7" fill="transparent" data-tip="lob marketing leads · week 12: 81%"/>
+<circle class="pt" cx="404.0" cy="66.1" r="7" fill="transparent" data-tip="lob marketing leads · week 13: 74%"/>
+</svg></figure>
+<figure class="chart"><figcaption><strong>Override rate</strong><span>share of recommendations, 3-week trailing</span></figcaption>
+<svg viewBox="0 0 420 220" role="img" aria-label="Override rate by group by week">
+<line class="grid" x1="44" y1="190.0" x2="404" y2="190.0"/>
+<text class="tick" x="38" y="194.0" text-anchor="end">0%</text>
+<line class="grid" x1="44" y1="148.0" x2="404" y2="148.0"/>
+<text class="tick" x="38" y="152.0" text-anchor="end">25%</text>
+<line class="grid" x1="44" y1="106.0" x2="404" y2="106.0"/>
+<text class="tick" x="38" y="110.0" text-anchor="end">50%</text>
+<line class="grid" x1="44" y1="64.0" x2="404" y2="64.0"/>
+<text class="tick" x="38" y="68.0" text-anchor="end">75%</text>
+<line class="grid" x1="44" y1="22.0" x2="404" y2="22.0"/>
+<text class="tick" x="38" y="26.0" text-anchor="end">100%</text>
+<text class="tick" x="44.0" y="210" text-anchor="middle">w1</text>
+<text class="tick" x="104.0" y="210" text-anchor="middle">w3</text>
+<text class="tick" x="164.0" y="210" text-anchor="middle">w5</text>
+<text class="tick" x="224.0" y="210" text-anchor="middle">w7</text>
+<text class="tick" x="284.0" y="210" text-anchor="middle">w9</text>
+<text class="tick" x="344.0" y="210" text-anchor="middle">w11</text>
+<text class="tick" x="404.0" y="210" text-anchor="middle">w13</text>
+<polyline class="series" style="stroke:var(--s1)" points="74.0,169.0 104.0,168.3 134.0,169.7 164.0,170.4 194.0,171.4 224.0,172.2 254.0,172.2 284.0,173.4 314.0,172.6 344.0,174.2 374.0,172.9 404.0,173.1" data-group="analysts"/>
+<circle class="pt" cx="74.0" cy="169.0" r="7" fill="transparent" data-tip="analysts · week 2: 12%"/>
+<circle class="pt" cx="104.0" cy="168.3" r="7" fill="transparent" data-tip="analysts · week 3: 13%"/>
+<circle class="pt" cx="134.0" cy="169.7" r="7" fill="transparent" data-tip="analysts · week 4: 12%"/>
+<circle class="pt" cx="164.0" cy="170.4" r="7" fill="transparent" data-tip="analysts · week 5: 12%"/>
+<circle class="pt" cx="194.0" cy="171.4" r="7" fill="transparent" data-tip="analysts · week 6: 11%"/>
+<circle class="pt" cx="224.0" cy="172.2" r="7" fill="transparent" data-tip="analysts · week 7: 11%"/>
+<circle class="pt" cx="254.0" cy="172.2" r="7" fill="transparent" data-tip="analysts · week 8: 11%"/>
+<circle class="pt" cx="284.0" cy="173.4" r="7" fill="transparent" data-tip="analysts · week 9: 10%"/>
+<circle class="pt" cx="314.0" cy="172.6" r="7" fill="transparent" data-tip="analysts · week 10: 10%"/>
+<circle class="pt" cx="344.0" cy="174.2" r="7" fill="transparent" data-tip="analysts · week 11: 9%"/>
+<circle class="pt" cx="374.0" cy="172.9" r="7" fill="transparent" data-tip="analysts · week 12: 10%"/>
+<circle class="pt" cx="404.0" cy="173.1" r="7" fill="transparent" data-tip="analysts · week 13: 10%"/>
+<polyline class="series" style="stroke:var(--s2)" points="44.0,190.0 74.0,190.0 104.0,189.3 134.0,186.5 164.0,183.4 194.0,181.7 224.0,182.2 254.0,182.1 284.0,181.4 314.0,180.8 344.0,181.2 374.0,182.4 404.0,182.5" data-group="campaign_ops"/>
+<circle class="pt" cx="44.0" cy="190.0" r="7" fill="transparent" data-tip="campaign ops · week 1: 0%"/>
+<circle class="pt" cx="74.0" cy="190.0" r="7" fill="transparent" data-tip="campaign ops · week 2: 0%"/>
+<circle class="pt" cx="104.0" cy="189.3" r="7" fill="transparent" data-tip="campaign ops · week 3: 0%"/>
+<circle class="pt" cx="134.0" cy="186.5" r="7" fill="transparent" data-tip="campaign ops · week 4: 2%"/>
+<circle class="pt" cx="164.0" cy="183.4" r="7" fill="transparent" data-tip="campaign ops · week 5: 4%"/>
+<circle class="pt" cx="194.0" cy="181.7" r="7" fill="transparent" data-tip="campaign ops · week 6: 5%"/>
+<circle class="pt" cx="224.0" cy="182.2" r="7" fill="transparent" data-tip="campaign ops · week 7: 5%"/>
+<circle class="pt" cx="254.0" cy="182.1" r="7" fill="transparent" data-tip="campaign ops · week 8: 5%"/>
+<circle class="pt" cx="284.0" cy="181.4" r="7" fill="transparent" data-tip="campaign ops · week 9: 5%"/>
+<circle class="pt" cx="314.0" cy="180.8" r="7" fill="transparent" data-tip="campaign ops · week 10: 5%"/>
+<circle class="pt" cx="344.0" cy="181.2" r="7" fill="transparent" data-tip="campaign ops · week 11: 5%"/>
+<circle class="pt" cx="374.0" cy="182.4" r="7" fill="transparent" data-tip="campaign ops · week 12: 5%"/>
+<circle class="pt" cx="404.0" cy="182.5" r="7" fill="transparent" data-tip="campaign ops · week 13: 4%"/>
+<polyline class="series flagged" style="stroke:var(--s3)" points="44.0,113.6 74.0,111.9 104.0,113.0 134.0,112.9 164.0,113.6 194.0,113.9 224.0,114.0 254.0,114.2 284.0,113.6 314.0,114.6 344.0,113.5 374.0,111.9 404.0,110.7" data-group="channel_managers"/>
+<circle class="pt" cx="44.0" cy="113.6" r="7" fill="transparent" data-tip="channel managers · week 1: 45%"/>
+<circle class="pt" cx="74.0" cy="111.9" r="7" fill="transparent" data-tip="channel managers · week 2: 46%"/>
+<circle class="pt" cx="104.0" cy="113.0" r="7" fill="transparent" data-tip="channel managers · week 3: 46%"/>
+<circle class="pt" cx="134.0" cy="112.9" r="7" fill="transparent" data-tip="channel managers · week 4: 46%"/>
+<circle class="pt" cx="164.0" cy="113.6" r="7" fill="transparent" data-tip="channel managers · week 5: 45%"/>
+<circle class="pt" cx="194.0" cy="113.9" r="7" fill="transparent" data-tip="channel managers · week 6: 45%"/>
+<circle class="pt" cx="224.0" cy="114.0" r="7" fill="transparent" data-tip="channel managers · week 7: 45%"/>
+<circle class="pt" cx="254.0" cy="114.2" r="7" fill="transparent" data-tip="channel managers · week 8: 45%"/>
+<circle class="pt" cx="284.0" cy="113.6" r="7" fill="transparent" data-tip="channel managers · week 9: 45%"/>
+<circle class="pt" cx="314.0" cy="114.6" r="7" fill="transparent" data-tip="channel managers · week 10: 45%"/>
+<circle class="pt" cx="344.0" cy="113.5" r="7" fill="transparent" data-tip="channel managers · week 11: 46%"/>
+<circle class="pt" cx="374.0" cy="111.9" r="7" fill="transparent" data-tip="channel managers · week 12: 47%"/>
+<circle class="pt" cx="404.0" cy="110.7" r="7" fill="transparent" data-tip="channel managers · week 13: 47%"/>
+<text class="label" x="400.0" y="103.7" text-anchor="end">channel managers</text>
+<polyline class="series" style="stroke:var(--s4)" points="74.0,190.0 104.0,177.4 134.0,175.8 164.0,172.2 194.0,172.6 224.0,173.0 254.0,171.2 284.0,176.4 314.0,177.5 344.0,179.1 374.0,176.0 404.0,175.9" data-group="compliance_approvers"/>
+<circle class="pt" cx="74.0" cy="190.0" r="7" fill="transparent" data-tip="compliance approvers · week 2: 0%"/>
+<circle class="pt" cx="104.0" cy="177.4" r="7" fill="transparent" data-tip="compliance approvers · week 3: 8%"/>
+<circle class="pt" cx="134.0" cy="175.8" r="7" fill="transparent" data-tip="compliance approvers · week 4: 8%"/>
+<circle class="pt" cx="164.0" cy="172.2" r="7" fill="transparent" data-tip="compliance approvers · week 5: 11%"/>
+<circle class="pt" cx="194.0" cy="172.6" r="7" fill="transparent" data-tip="compliance approvers · week 6: 10%"/>
+<circle class="pt" cx="224.0" cy="173.0" r="7" fill="transparent" data-tip="compliance approvers · week 7: 10%"/>
+<circle class="pt" cx="254.0" cy="171.2" r="7" fill="transparent" data-tip="compliance approvers · week 8: 11%"/>
+<circle class="pt" cx="284.0" cy="176.4" r="7" fill="transparent" data-tip="compliance approvers · week 9: 8%"/>
+<circle class="pt" cx="314.0" cy="177.5" r="7" fill="transparent" data-tip="compliance approvers · week 10: 7%"/>
+<circle class="pt" cx="344.0" cy="179.1" r="7" fill="transparent" data-tip="compliance approvers · week 11: 6%"/>
+<circle class="pt" cx="374.0" cy="176.0" r="7" fill="transparent" data-tip="compliance approvers · week 12: 8%"/>
+<circle class="pt" cx="404.0" cy="175.9" r="7" fill="transparent" data-tip="compliance approvers · week 13: 8%"/>
+<polyline class="series" style="stroke:var(--s5)" points="44.0,190.0 74.0,190.0 104.0,185.5 134.0,180.9 164.0,175.7 194.0,172.8 224.0,172.2 254.0,171.6 284.0,172.1 314.0,170.9 344.0,172.0 374.0,174.8 404.0,175.6" data-group="lob_marketing_leads"/>
+<circle class="pt" cx="44.0" cy="190.0" r="7" fill="transparent" data-tip="lob marketing leads · week 1: 0%"/>
+<circle class="pt" cx="74.0" cy="190.0" r="7" fill="transparent" data-tip="lob marketing leads · week 2: 0%"/>
+<circle class="pt" cx="104.0" cy="185.5" r="7" fill="transparent" data-tip="lob marketing leads · week 3: 3%"/>
+<circle class="pt" cx="134.0" cy="180.9" r="7" fill="transparent" data-tip="lob marketing leads · week 4: 5%"/>
+<circle class="pt" cx="164.0" cy="175.7" r="7" fill="transparent" data-tip="lob marketing leads · week 5: 8%"/>
+<circle class="pt" cx="194.0" cy="172.8" r="7" fill="transparent" data-tip="lob marketing leads · week 6: 10%"/>
+<circle class="pt" cx="224.0" cy="172.2" r="7" fill="transparent" data-tip="lob marketing leads · week 7: 11%"/>
+<circle class="pt" cx="254.0" cy="171.6" r="7" fill="transparent" data-tip="lob marketing leads · week 8: 11%"/>
+<circle class="pt" cx="284.0" cy="172.1" r="7" fill="transparent" data-tip="lob marketing leads · week 9: 11%"/>
+<circle class="pt" cx="314.0" cy="170.9" r="7" fill="transparent" data-tip="lob marketing leads · week 10: 11%"/>
+<circle class="pt" cx="344.0" cy="172.0" r="7" fill="transparent" data-tip="lob marketing leads · week 11: 11%"/>
+<circle class="pt" cx="374.0" cy="174.8" r="7" fill="transparent" data-tip="lob marketing leads · week 12: 9%"/>
+<circle class="pt" cx="404.0" cy="175.6" r="7" fill="transparent" data-tip="lob marketing leads · week 13: 9%"/>
+</svg></figure>
+<figure class="chart"><figcaption><strong>Managers coaching</strong><span>share of managers, 3-week trailing</span></figcaption>
+<svg viewBox="0 0 420 220" role="img" aria-label="Managers coaching by group by week">
+<line class="grid" x1="44" y1="190.0" x2="404" y2="190.0"/>
+<text class="tick" x="38" y="194.0" text-anchor="end">0%</text>
+<line class="grid" x1="44" y1="148.0" x2="404" y2="148.0"/>
+<text class="tick" x="38" y="152.0" text-anchor="end">25%</text>
+<line class="grid" x1="44" y1="106.0" x2="404" y2="106.0"/>
+<text class="tick" x="38" y="110.0" text-anchor="end">50%</text>
+<line class="grid" x1="44" y1="64.0" x2="404" y2="64.0"/>
+<text class="tick" x="38" y="68.0" text-anchor="end">75%</text>
+<line class="grid" x1="44" y1="22.0" x2="404" y2="22.0"/>
+<text class="tick" x="38" y="26.0" text-anchor="end">100%</text>
+<text class="tick" x="44.0" y="210" text-anchor="middle">w1</text>
+<text class="tick" x="104.0" y="210" text-anchor="middle">w3</text>
+<text class="tick" x="164.0" y="210" text-anchor="middle">w5</text>
+<text class="tick" x="224.0" y="210" text-anchor="middle">w7</text>
+<text class="tick" x="284.0" y="210" text-anchor="middle">w9</text>
+<text class="tick" x="344.0" y="210" text-anchor="middle">w11</text>
+<text class="tick" x="404.0" y="210" text-anchor="middle">w13</text>
+<polyline class="series" style="stroke:var(--s1)" points="74.0,78.0 104.0,50.0 134.0,40.7 164.0,22.0 194.0,78.0 224.0,96.7 254.0,115.3 284.0,59.3 314.0,78.0 344.0,78.0 374.0,115.3 404.0,106.0" data-group="analysts"/>
+<circle class="pt" cx="74.0" cy="78.0" r="7" fill="transparent" data-tip="analysts · week 2: 67%"/>
+<circle class="pt" cx="104.0" cy="50.0" r="7" fill="transparent" data-tip="analysts · week 3: 83%"/>
+<circle class="pt" cx="134.0" cy="40.7" r="7" fill="transparent" data-tip="analysts · week 4: 89%"/>
+<circle class="pt" cx="164.0" cy="22.0" r="7" fill="transparent" data-tip="analysts · week 5: 100%"/>
+<circle class="pt" cx="194.0" cy="78.0" r="7" fill="transparent" data-tip="analysts · week 6: 67%"/>
+<circle class="pt" cx="224.0" cy="96.7" r="7" fill="transparent" data-tip="analysts · week 7: 56%"/>
+<circle class="pt" cx="254.0" cy="115.3" r="7" fill="transparent" data-tip="analysts · week 8: 44%"/>
+<circle class="pt" cx="284.0" cy="59.3" r="7" fill="transparent" data-tip="analysts · week 9: 78%"/>
+<circle class="pt" cx="314.0" cy="78.0" r="7" fill="transparent" data-tip="analysts · week 10: 67%"/>
+<circle class="pt" cx="344.0" cy="78.0" r="7" fill="transparent" data-tip="analysts · week 11: 67%"/>
+<circle class="pt" cx="374.0" cy="115.3" r="7" fill="transparent" data-tip="analysts · week 12: 44%"/>
+<circle class="pt" cx="404.0" cy="106.0" r="7" fill="transparent" data-tip="analysts · week 13: 50%"/>
+<polyline class="series" style="stroke:var(--s2)" points="44.0,22.0 74.0,22.0 104.0,33.2 134.0,44.4 164.0,55.6 194.0,55.6 224.0,44.4 254.0,44.4 284.0,33.2 314.0,55.6 344.0,55.6 374.0,66.8 404.0,55.6" data-group="campaign_ops"/>
+<circle class="pt" cx="44.0" cy="22.0" r="7" fill="transparent" data-tip="campaign ops · week 1: 100%"/>
+<circle class="pt" cx="74.0" cy="22.0" r="7" fill="transparent" data-tip="campaign ops · week 2: 100%"/>
+<circle class="pt" cx="104.0" cy="33.2" r="7" fill="transparent" data-tip="campaign ops · week 3: 93%"/>
+<circle class="pt" cx="134.0" cy="44.4" r="7" fill="transparent" data-tip="campaign ops · week 4: 87%"/>
+<circle class="pt" cx="164.0" cy="55.6" r="7" fill="transparent" data-tip="campaign ops · week 5: 80%"/>
+<circle class="pt" cx="194.0" cy="55.6" r="7" fill="transparent" data-tip="campaign ops · week 6: 80%"/>
+<circle class="pt" cx="224.0" cy="44.4" r="7" fill="transparent" data-tip="campaign ops · week 7: 87%"/>
+<circle class="pt" cx="254.0" cy="44.4" r="7" fill="transparent" data-tip="campaign ops · week 8: 87%"/>
+<circle class="pt" cx="284.0" cy="33.2" r="7" fill="transparent" data-tip="campaign ops · week 9: 93%"/>
+<circle class="pt" cx="314.0" cy="55.6" r="7" fill="transparent" data-tip="campaign ops · week 10: 80%"/>
+<circle class="pt" cx="344.0" cy="55.6" r="7" fill="transparent" data-tip="campaign ops · week 11: 80%"/>
+<circle class="pt" cx="374.0" cy="66.8" r="7" fill="transparent" data-tip="campaign ops · week 12: 73%"/>
+<circle class="pt" cx="404.0" cy="55.6" r="7" fill="transparent" data-tip="campaign ops · week 13: 80%"/>
+<polyline class="series flagged" style="stroke:var(--s3)" points="44.0,142.0 74.0,154.0 104.0,150.0 134.0,158.0 164.0,150.0 194.0,142.0 224.0,150.0 254.0,166.0 284.0,182.0 314.0,174.0 344.0,158.0 374.0,150.0 404.0,142.0" data-group="channel_managers"/>
+<circle class="pt" cx="44.0" cy="142.0" r="7" fill="transparent" data-tip="channel managers · week 1: 29%"/>
+<circle class="pt" cx="74.0" cy="154.0" r="7" fill="transparent" data-tip="channel managers · week 2: 21%"/>
+<circle class="pt" cx="104.0" cy="150.0" r="7" fill="transparent" data-tip="channel managers · week 3: 24%"/>
+<circle class="pt" cx="134.0" cy="158.0" r="7" fill="transparent" data-tip="channel managers · week 4: 19%"/>
+<circle class="pt" cx="164.0" cy="150.0" r="7" fill="transparent" data-tip="channel managers · week 5: 24%"/>
+<circle class="pt" cx="194.0" cy="142.0" r="7" fill="transparent" data-tip="channel managers · week 6: 29%"/>
+<circle class="pt" cx="224.0" cy="150.0" r="7" fill="transparent" data-tip="channel managers · week 7: 24%"/>
+<circle class="pt" cx="254.0" cy="166.0" r="7" fill="transparent" data-tip="channel managers · week 8: 14%"/>
+<circle class="pt" cx="284.0" cy="182.0" r="7" fill="transparent" data-tip="channel managers · week 9: 5%"/>
+<circle class="pt" cx="314.0" cy="174.0" r="7" fill="transparent" data-tip="channel managers · week 10: 10%"/>
+<circle class="pt" cx="344.0" cy="158.0" r="7" fill="transparent" data-tip="channel managers · week 11: 19%"/>
+<circle class="pt" cx="374.0" cy="150.0" r="7" fill="transparent" data-tip="channel managers · week 12: 24%"/>
+<circle class="pt" cx="404.0" cy="142.0" r="7" fill="transparent" data-tip="channel managers · week 13: 29%"/>
+<text class="label" x="400.0" y="135.0" text-anchor="end">channel managers</text>
+<polyline class="series" style="stroke:var(--s4)" points="44.0,22.0 74.0,50.0 104.0,40.7 134.0,59.3 164.0,78.0 194.0,96.7 224.0,78.0 254.0,59.3 284.0,59.3 314.0,78.0 344.0,96.7 374.0,78.0 404.0,78.0" data-group="compliance_approvers"/>
+<circle class="pt" cx="44.0" cy="22.0" r="7" fill="transparent" data-tip="compliance approvers · week 1: 100%"/>
+<circle class="pt" cx="74.0" cy="50.0" r="7" fill="transparent" data-tip="compliance approvers · week 2: 83%"/>
+<circle class="pt" cx="104.0" cy="40.7" r="7" fill="transparent" data-tip="compliance approvers · week 3: 89%"/>
+<circle class="pt" cx="134.0" cy="59.3" r="7" fill="transparent" data-tip="compliance approvers · week 4: 78%"/>
+<circle class="pt" cx="164.0" cy="78.0" r="7" fill="transparent" data-tip="compliance approvers · week 5: 67%"/>
+<circle class="pt" cx="194.0" cy="96.7" r="7" fill="transparent" data-tip="compliance approvers · week 6: 56%"/>
+<circle class="pt" cx="224.0" cy="78.0" r="7" fill="transparent" data-tip="compliance approvers · week 7: 67%"/>
+<circle class="pt" cx="254.0" cy="59.3" r="7" fill="transparent" data-tip="compliance approvers · week 8: 78%"/>
+<circle class="pt" cx="284.0" cy="59.3" r="7" fill="transparent" data-tip="compliance approvers · week 9: 78%"/>
+<circle class="pt" cx="314.0" cy="78.0" r="7" fill="transparent" data-tip="compliance approvers · week 10: 67%"/>
+<circle class="pt" cx="344.0" cy="96.7" r="7" fill="transparent" data-tip="compliance approvers · week 11: 56%"/>
+<circle class="pt" cx="374.0" cy="78.0" r="7" fill="transparent" data-tip="compliance approvers · week 12: 67%"/>
+<circle class="pt" cx="404.0" cy="78.0" r="7" fill="transparent" data-tip="compliance approvers · week 13: 67%"/>
+<polyline class="series" style="stroke:var(--s5)" points="44.0,106.0 74.0,148.0 104.0,134.0 134.0,134.0 164.0,106.0 194.0,78.0 224.0,78.0 254.0,78.0 284.0,106.0 314.0,106.0 344.0,106.0 374.0,78.0 404.0,64.0" data-group="lob_marketing_leads"/>
+<circle class="pt" cx="44.0" cy="106.0" r="7" fill="transparent" data-tip="lob marketing leads · week 1: 50%"/>
+<circle class="pt" cx="74.0" cy="148.0" r="7" fill="transparent" data-tip="lob marketing leads · week 2: 25%"/>
+<circle class="pt" cx="104.0" cy="134.0" r="7" fill="transparent" data-tip="lob marketing leads · week 3: 33%"/>
+<circle class="pt" cx="134.0" cy="134.0" r="7" fill="transparent" data-tip="lob marketing leads · week 4: 33%"/>
+<circle class="pt" cx="164.0" cy="106.0" r="7" fill="transparent" data-tip="lob marketing leads · week 5: 50%"/>
+<circle class="pt" cx="194.0" cy="78.0" r="7" fill="transparent" data-tip="lob marketing leads · week 6: 67%"/>
+<circle class="pt" cx="224.0" cy="78.0" r="7" fill="transparent" data-tip="lob marketing leads · week 7: 67%"/>
+<circle class="pt" cx="254.0" cy="78.0" r="7" fill="transparent" data-tip="lob marketing leads · week 8: 67%"/>
+<circle class="pt" cx="284.0" cy="106.0" r="7" fill="transparent" data-tip="lob marketing leads · week 9: 50%"/>
+<circle class="pt" cx="314.0" cy="106.0" r="7" fill="transparent" data-tip="lob marketing leads · week 10: 50%"/>
+<circle class="pt" cx="344.0" cy="106.0" r="7" fill="transparent" data-tip="lob marketing leads · week 11: 50%"/>
+<circle class="pt" cx="374.0" cy="78.0" r="7" fill="transparent" data-tip="lob marketing leads · week 12: 67%"/>
+<circle class="pt" cx="404.0" cy="64.0" r="7" fill="transparent" data-tip="lob marketing leads · week 13: 75%"/>
+</svg></figure></div>
+<section><h2>Flags this week</h2><table><thead><tr><th>Group</th><th>Flag</th><th>What it means and what to do</th></tr></thead><tbody><tr><td>channel managers</td><td><code>STALL</code></td><td>active 88% but work migrated 14% vs target 25%; people are in the tool, not doing the real work there. Desire barrier: check legacy path and override rate</td></tr><tr><td>channel managers</td><td><code>OVERRIDE</code></td><td>override rate 46% above guardrail 25%; manager conversation on override discipline</td></tr><tr><td>channel managers</td><td><code>COACHING</code></td><td>only 14% of managers coached this week; sponsor&#x27;s ask goes to the managers&#x27; leader</td></tr></tbody></table></section>
+<section><details><summary>Table view, week 4</summary><table><thead><tr><th>Group</th><th>Active</th><th>Migrated</th><th>Override</th><th>Retention</th><th>Self-service</th><th>Coaching</th><th>Tickets /100</th></tr></thead><tbody><tr><td>analysts</td><td>70%</td><td>19%</td><td>12%</td><td>89%</td><td>97%</td><td>89%</td><td>4.8</td></tr><tr><td>campaign ops</td><td>100%</td><td>47%</td><td>2%</td><td>100%</td><td>94%</td><td>87%</td><td>22.5</td></tr><tr><td>channel managers</td><td>88%</td><td>14%</td><td>46%</td><td>91%</td><td>97%</td><td>19%</td><td>7.5</td></tr><tr><td>compliance approvers</td><td>92%</td><td>31%</td><td>8%</td><td>96%</td><td>97%</td><td>78%</td><td>8.7</td></tr><tr><td>lob marketing leads</td><td>90%</td><td>29%</td><td>5%</td><td>92%</td><td>93%</td><td>33%</td><td>16.7</td></tr></tbody></table></details></section>
+<div id="tip"></div>
+<script>
+const tip=document.getElementById('tip');document.querySelectorAll('.pt').forEach(p=>{p.addEventListener('mousemove',e=>{tip.textContent=p.dataset.tip;tip.style.display='block';tip.style.left=(e.clientX+12)+'px';tip.style.top=(e.clientY+12)+'px';});p.addEventListener('mouseleave',()=>tip.style.display='none');});
+</script></main></body></html>
